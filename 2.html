@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to LinuxWall by Sticky.</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/800px-Tux.svg.png" type="image/png">
+
+    <style>
+        :root {
+            --bg-color: rgba(0, 0, 0, 0.7);
+            --text-color: white;
+            --link-color: #ffcc00;
+        }
+
+        body.light-mode {
+            --bg-color: rgba(255, 255, 255, 0.95);
+            --text-color: #222;
+            --link-color: #0066cc;
+            background-color: #f2f2f2;
+            background-image: none;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-image: url('https://preview.redd.it/new-windows-server-2025-wallpapers-v0-1h2d6i9dt6kc1.jpg?width=1080&crop=smart&auto=webp&s=6e5836786114cc96662a2f9e3c1e76ae07936111');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .content {
+            background-color: var(--bg-color);
+            padding: 30px;
+            margin: 0 auto;
+            max-width: 800px;
+            transition: background-color 0.3s ease;
+        }
+
+        h1, h2, p {
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        ul li {
+            margin: 15px 0;
+        }
+
+        ul li img {
+            width: 64px;
+            height: auto;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .toggle-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .status {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+            color: limegreen;
+        }
+
+        .download-button {
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            background-color: var(--link-color);
+            color: black;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            width: fit-content;
+        }
+
+        .download-button:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="toggle-container">
+            <button onclick="toggleTheme()">Toggle Light/Dark Mode</button>
+        </div>
+
+        <h1>Welcome to LinuxWall by Sticky!</h1>
+        <p>This is my custom server environment, LinuxWall — running on Fedora Server and online since 2025!</p>
+
+        <div class="status">
+            🟢 Server Status: Online for 99.99% uptime
+        </div>
+
+        <h2>What is LinuxWall?</h2>
+        <p>
+            LinuxWall is a secure and flexible web server setup built on Fedora Server. Designed for performance and reliability, 
+            it supports hosting for various open-source platforms and tools.
+        </p>
+
+        <h2>Currently Providing Services For:</h2>
+        <ul>
+            <li>
+                <img src="https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png" alt="Ubuntu Logo">
+                <a href="https://ubuntu.com" target="_blank">Ubuntu</a>
+            </li>
+            <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Mozilla_Firefox_2021_icon.svg" alt="Firefox Logo">
+                <a href="https://www.mozilla.org/firefox/" target="_blank">Firefox</a>
+            </li>
+            <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Fedora_logo.svg" alt="Fedora Logo">
+                <a href="https://getfedora.org" target="_blank">Fedora</a>
+            </li>
+            <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/AMD_Logo.svg" alt="AMD Logo">
+                <a href="https://www.amd.com" target="_blank">AMD</a>
+            </li>
+        </ul>
+
+        <h2>Technologies Used</h2>
+        <ul>
+            <li>Fedora Server (base OS)</li>
+            <li>Apache / NGINX web servers</li>
+            <li>HTML5, CSS3, and JavaScript</li>
+            <li>Support for PHP, Node.js, and Python</li>
+            <li>Secure SSH and automated updates</li>
+        </ul>
+
+        <h2>About Me</h2>
+        <p>
+            Hello, I'm Ethan! I speak Danish and English — thank you for stopping by my server webpage.
+            As you can see, I handle a lot of mirrors and web pages, which is hard work, so I might not get to your messages or emails 😞.
+            <br><br>
+            If you're a company looking to be added to the server for webpage hosting or mirroring files, please contact me directly.
+        </p>
+
+        <h2>Download My Portfolio</h2>
+        <a href="your-portfolio.pdf" download class="download-button">📄 Download Portfolio (PDF)</a>
+
+        <h2>Contact</h2>
+        <p>📞 +44 7749 772021<br>📧 <a href="mailto:ethanbudds2012@gmail.com">ethanbudds2012@gmail.com</a></p>
+
+        <footer>
+            <hr>
+            <p>&copy; 2025 Sticky's LinuxWall Server. Powered by Fedora. All rights reserved.</p>
+            <p>Background image © Microsoft, from Windows Server 2025 preview.</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+        }
+    </script>
+</body>
+</html>
